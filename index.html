@@ -23,8 +23,8 @@
 
         <div class="navbar__menu">
             <a href="#" class="navbar__link">Home</a>
-            <a href="#" class="navbar__link">Projects</a>
-            <a href="#" class="navbar__link">Skills</a>
+            <a href="#showcase" class="navbar__link">Projects</a>
+            <a href="#career" class="navbar__link">Skills</a>
             <a href="#" class="navbar__link">About</a>
         </div>
 
@@ -64,8 +64,8 @@
             <h3>Fullstack Developer Based in Mumbai, India</h3>
             <p>Building intelligent, scalable, and high-performance digital solutions with AI and full-stack expertise</p>
             <div class="hero__actions">
-                <button class="btn">Work With Me</button>
-                <button class="btn btn--secondary">See My Portfolio</button>
+                <!-- <button class="btn">Work With Me</button>
+                <button class="btn btn--secondary">See My Portfolio</button> -->
             </div>
         </div>
 
@@ -86,8 +86,8 @@
                 experiences.</p>
 
             <div class="skills__actions">
-                <a href="https://x.com/pratham_180105" class="btn">Work With Me</a>
-                <a href="mailto:prathamsingh1801@gmail.com" class="btn btn--secondary">Send Email</a>
+                <!-- <a href="https://x.com/pratham_180105" class="btn">Work With Me</a>
+                <a href="mailto:prathamsingh1801@gmail.com" class="btn btn--secondary">Send Email</a> -->
             </div>
         </div>
 
@@ -119,7 +119,7 @@
 
     </section>
 
-    <section class="showcase">
+    <section id="showcase" class="showcase">
 
         <div class="showcase__header">
             <h3>My Projects.</h3>
@@ -151,7 +151,10 @@
                         </p>
                         
                         
-                        <button class="btn">View Live Demo</button>
+                        <a href="https://github.com/Pratham6996/SignLanguageInterpreter" target="_blank">
+                            <button class="btn">View Repository</button>
+                        </a>
+                        
                     </div>
                     <div class="project-card">
                         <img src="assets/gitrep.jpg" alt="Portfolio 2" class="project-card__image">
@@ -160,7 +163,10 @@
                             <p>July 2022</p>
                         </div>
                         <p class="project-card__desc">This project extracts GitHub repository details, including name, username, stars, and URL, and stores them in a structured Excel file while handling pagination automatically. </p>
-                        <button class="btn">View Live Demo</button>
+                        <a href="https://github.com/Pratham6996/Repository-Scraper" target="_blank">
+                            <button class="btn">View Repository</button>
+                        </a>
+                        
                     </div>
                     <div class="project-card">
                         <img src="assets/moviedb.jpeg" alt="Portfolio 3" class="project-card__image">
@@ -169,7 +175,10 @@
                             <p>July 2022</p>
                         </div>
                         <p class="project-card__desc">This project scrapes movie details from The Movie Database (TMDb), extracting information like title, ratings, genres, release date, runtime, director, and URL. The data is structured into a pandas DataFrame and saved as an Excel file for easy access.</p>
-                        <button class="btn">View Live Demo</button>
+                        <a href="https://github.com/Pratham6996/Movie-Scraper" target="_blank">
+                            <button class="btn">View Repository</button>
+                        </a>
+                        
                     </div>
                     <div class="project-card">
                         <img src="assets/trust.png" alt="Portfolio 4" class="project-card__image">
@@ -178,7 +187,10 @@
                             <p>July 2022</p>
                         </div>
                         <p class="project-card__desc">This project is a web scraper that extracts reviews and trust scores for businesses listed on Trustpilot across various categories, including hotels, financial institutions, and entertainment. The collected data is structured and saved in an Excel file for easy analysis.</p>
-                        <button class="btn">View Live Demo</button>
+                        <a href="https://github.com/Pratham6996/Review-Scraper" target="_blank">
+                            <button class="btn">View Repository</button>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -248,7 +260,7 @@
 
     </section>
 
-    <section class="career">
+    <section id="career" class="career">
         <div class="career__jobs">
             <h3>Work Experience</h3>
             <div class="job">
@@ -311,10 +323,14 @@
     </section>
 
     <section class="contact">
-        <h5>Got a Projects?</h5>
+        <h5>Got project ideas ?</h5>
         <h2>Let's Work Together!</h2>
-        <button class="btn">Send Message</button>
-        <p>Phone: <span>+11111111111</span></p>
+        <a href="https://wa.me/+918591338300" target="_blank">
+            <button class="btn">Send Message</button>
+        </a>
+        
+        
+        <p>Phone: <span>+91 8591338300</span></p>
     </section>
 
     <footer class="footer">
@@ -324,8 +340,8 @@
         </div>
         <div class="footer__links">
             <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
+            <a href="#showcase">Projects</a>
+            <a href="#career">Skills</a>
             <a href="#">About</a>
         </div>
     </footer>

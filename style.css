@@ -705,4 +705,9 @@ body{
         gap: 16px;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+    
+
 }
