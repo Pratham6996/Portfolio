@@ -392,20 +392,82 @@ body{
     background: #000;
 }
 
-.career{
-    padding: 60px 60px 80px;
-    display: flex;
-    align-items: center;
-    gap: 100px;
+.career {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
 }
 
 .career__jobs,
+.career__qualifications,
 .career__awards,
-.career__skills{
-    width: 50%;
+.career__skills {
     display: flex;
     flex-direction: column;
+    gap: 15px; /* Keep spacing consistent */
+    height: 100%;
+    justify-content: flex-start; /* Ensure all sections start at the top */
+    margin-top: 0; /* REMOVE extra space */
+}
+
+.job,
+.award,
+.skill,
+.qualification {
+    display: flex;
+    align-items: center;
     gap: 20px;
+    padding-bottom: 15px; /* Reduce padding to tighten spacing */
+    border-bottom: 1px solid #e5e7eb;
+}
+.career__awards,
+.career__skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap */
+    height: 100%;
+    justify-content: flex-start; /* Align content to the top */
+    margin-top: 19px;
+}
+
+.award, .skill {
+    align-items: flex-start; /* Keep content aligned properly */
+    gap: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+.career{
+    padding: 60px 60px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.career__jobs{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.career__qualifications{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.career__awards{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.career__skills{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .career h3{
@@ -416,15 +478,8 @@ body{
 
 .job,
 .award,
-.skill{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #e5e7eb;
-}
-
-.qualification {
+.skill,
+.qualification{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -461,7 +516,8 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-    .skill {
+    .skill,
+    .qualification {
         flex-direction: column;
         align-items: flex-start;
     }
