@@ -450,6 +450,13 @@ body{
     gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .career {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .career__jobs{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
