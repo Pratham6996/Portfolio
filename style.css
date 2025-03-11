@@ -62,6 +62,12 @@ body{
     gap: 10px;
 }
 
+.navbar__logo-img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
 .navbar__logo i{
     font-size: 30px;
 }
@@ -454,6 +460,36 @@ body{
     .career {
         display: flex;
         flex-direction: column;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+    
+    .skill,
+    .qualification {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .qualification__info {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 50px);
+    }
+    
+    .qualification__info h5 {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .qualification__info p {
+        font-size: 12px;
+    }
+    
+    .qualification i {
+        flex-shrink: 0;
     }
 }
 
@@ -520,14 +556,6 @@ body{
     font-size: 13px;
     color: #6b7280;
     font-weight: 500;
-}
-
-@media screen and (max-width: 768px) {
-    .skill,
-    .qualification {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 }
 
 .job i,
@@ -697,6 +725,10 @@ body{
         padding: 20px 30px;
     }
 
+    .navbar__logo-img {
+        height: 50px;
+    }
+
     .hero{
         padding: 100px 30px 40px;
     }
@@ -761,6 +793,10 @@ body{
     
     .navbar__actions{
         display: none;
+    }
+
+    .navbar__logo-img {
+        height: 40px;
     }
 
     .hero{
