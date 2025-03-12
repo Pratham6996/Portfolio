@@ -402,8 +402,8 @@ body{
     padding: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-rows: auto auto;
+    gap: 60px 40px;
     align-items: start;
 }
 
@@ -413,10 +413,10 @@ body{
 .career__skills {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Keep spacing consistent */
+    gap: 15px;
     height: 100%;
-    justify-content: flex-start; /* Ensure all sections start at the top */
-    margin-top: 0; /* REMOVE extra space */
+    justify-content: flex-start;
+    margin-top: 0;
 }
 
 .job,
@@ -426,73 +426,28 @@ body{
     display: flex;
     align-items: center;
     gap: 20px;
-    padding-bottom: 15px; /* Reduce padding to tighten spacing */
+    padding-bottom: 15px;
     border-bottom: 1px solid #e5e7eb;
 }
+
 .career__awards,
 .career__skills {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Reduced gap */
+    gap: 10px;
     height: 100%;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: flex-start;
     margin-top: 19px;
 }
 
 .award, .skill {
-    align-items: flex-start; /* Keep content aligned properly */
+    align-items: flex-start;
     gap: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e5e7eb;
 }
 
-
-
-.career{
-    padding: 60px 60px 80px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    gap: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .career {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 30px;
-        gap: 30px;
-    }
-    
-    .skill,
-    .qualification {
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        padding-bottom: 15px;
-        margin-bottom: 5px;
-    }
-    
-    .qualification__info {
-        display: flex;
-        flex-direction: column;
-        width: calc(100% - 50px);
-    }
-    
-    .qualification__info h5 {
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
-    
-    .qualification__info p {
-        font-size: 12px;
-    }
-    
-    .qualification i {
-        flex-shrink: 0;
-    }
-}
-
+/* Grid positioning for career sections */
 .career__jobs{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -516,7 +471,7 @@ body{
 .career h3{
     font-size: 32px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .job,
@@ -853,4 +808,38 @@ body{
         scroll-behavior: smooth;
     }
     
+    .career {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+    
+    .skill,
+    .qualification {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .qualification__info {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 50px);
+    }
+    
+    .qualification__info h5 {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .qualification__info p {
+        font-size: 12px;
+    }
+    
+    .qualification i {
+        flex-shrink: 0;
+    }
 }
