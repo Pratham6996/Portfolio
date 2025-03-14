@@ -63,9 +63,90 @@
         <div class="hero__intro">
             <h3>Fullstack Developer Based in Mumbai, India</h3>
             <p>Building intelligent, scalable, and high-performance digital solutions with AI and full-stack expertise</p>
+           
             <div class="hero__actions">
-                <!-- <button class="btn">Work With Me</button>
-                <button class="btn btn--secondary">See My Portfolio</button> -->
+                <a href="/assets/pratham-resume-25.pdf" target="_blank" class="resume-btn">
+                    <button class="resume-button">
+                      <span class="resume-text">Download Resume</span>
+                      <span class="resume-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-6 2h12v2H6v-2z"></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </a>
+                  
+                  <style>
+                  .resume-btn {
+                    text-decoration: none;
+                  }
+                  
+                  .resume-button {
+                    width: 180px; 
+                    height: 50px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    background: #fff; /* White background */
+                    border: 2px solid #ccc; /* Light gray border */
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Subtle gray shadow */
+                    transition: 200ms;
+                    margin-left: 100%;
+                  }
+                  
+                  .resume-button, .resume-button span {
+                    transition: 200ms;
+                  }
+                  
+                  .resume-text {
+                    transform: translateX(25px); 
+                    color: black; /* Black text */
+                    font-weight: bold;
+                    white-space: nowrap; 
+                  }
+                  
+                  .resume-icon {
+                    position: absolute;
+                    transform: translateX(130px);
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                  
+                  .resume-button svg {
+                    width: 18px;
+                    fill: black; /* Black icon */
+                  }
+                  
+                  .resume-button:hover {
+                    background: #000; /* Black background on hover */
+                  }
+                  
+                  .resume-button:hover .resume-text {
+                    color: transparent; /* Text disappears on hover */
+                  }
+                  
+                  .resume-button:hover .resume-icon {
+                    width: 180px; 
+                    transform: translateX(0);
+                  }
+                  
+                  .resume-button:hover svg {
+                    fill: white; /* Icon turns white on hover */
+                  }
+                  
+                  .resume-button:focus {
+                    outline: none;
+                  }
+                  
+                  .resume-button:active .resume-icon svg {
+                    transform: scale(0.8);
+                  }
+                  </style>
+                  
             </div>
         </div>
 
